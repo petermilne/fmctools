@@ -1,4 +1,6 @@
 #!/bin/bash
-(cd libipmi make CC=arm-xilinx-linux-gnueabi-gcc)
-make CC=arm-xilinx-linux-gnueabi-gcc
+CC=arm-linux-gnueabihf-gcc
+(cd libipmi; make CC=${CC})
+make CC=$CC
+
 
